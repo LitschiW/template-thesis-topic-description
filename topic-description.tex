@@ -27,8 +27,8 @@
 %\vspace*{-2cm} \includegraphics[width=16cm]{header.png}
 \includegraphics[width=6cm]{figures/stuttgart-vector.pdf}\hfill{\includegraphics[width=3cm]{figures/sqa_logo.png}}
 \quad \\ [0.5cm]
-{\large \textit{Master's Thesis (Master Softwaretechnik):}} \\ [1mm]
-{\Large Thesis Title}
+{\large \textit{Bachelor's Thesis (Bachelor Softwaretechnik):}} \\ [1mm]
+{\Large Simulating Scenario-based Chaos Experiments for Microservice Architectures}
 }
 
 \begin{document}
@@ -42,29 +42,18 @@
 
 
 \subsection*{Background and Motivation}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec
-mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec ullamcorper, felis non
-sodales commodo, lectus velit ultrices augue, a dignissim nibh lectus placerat pede. \cite{newman2015building} 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed interdum libero ut metus.
-Pellentesque placerat. Nam rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin.
-Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
-Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-
+In a preceding case study we showed that scenario-based chaos tests are a valid way for testing the resilience of a microservice architecture \cite{CaseStudyDatev}. Besides running such scenarios in production, they could also be simulated to increase time efficiency and safety of such tests. Therefore, a preliminary requirements specification for resilience scenario simulators was created. After a superficial evaluation of five existing microservice simulators it came clear that none of these currently support the requirements to a completely level. 
+However, some simulators provide sophisticated tools for specific types of scenarios. For example, SimuLizar \cite{SimuLizar1} has very advanced work load description tools, whilst MiSim \cite{MiSim} can simulate chaos like fault loads. 
 
 \subsection*{Goals}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec
-mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec ullamcorper, felis non
-sodales commodo, lectus velit ultrices augue, a dignissim nibh lectus placerat pede. Vivamus nunc
-nunc, molestie ut, ultricies vel, semper in, velit. \cite{bass2015devops} 
-Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
-Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-
+In the scope of this thesis a requirement analysis will take place to establish the exact requirements for a resilience scenario simulator. This will include doing interviews and questionings with the known stakeholders.
+Further, based on these requirements existing microservice simulators will be evaluated with the help of developer interviews, code analysis and a structured research. The goal is to find out which scenario type each simulator can simulate the best.
+The most versatile or promising (with regard to the requirements) simulators will then be extended to support a common and formal scenario description, which is being developed in another project.
+Lastly, the extended simulators will be used to simulate actual scenarios, created and executed in the preceding case study \cite{CaseStudyDatev}. Results of the simulation will then be compared to the real results and show how accurate the simulators are.
 
 \subsection*{Possible Collaborations}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec
-mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec ullamcorper, felis non
-sodales commodo, lectus velit ultrices augue, a dignissim nibh lectus placerat pede. Vivamus nunc
-nunc, molestie ut, ultricies vel, semper in, velit. \cite{pitakrat2016archaware}
+As aforementioned this thesis will reuse the data gathered by a preceding case study. Further, we are currently looking into another possible collaboration, which would supply us with further scenarios and real world data. 
+Lastly, there are three ongoing thesis by other students that also  revolve around the
 
 \begin{scriptsize}
 \bibliographystyle{abbrv}
@@ -73,7 +62,7 @@ nunc, molestie ut, ultricies vel, semper in, velit. \cite{pitakrat2016archaware}
 
 \subsection*{Contact}
 Dr.-Ing. André van Hoorn, van.hoorn@informatik.uni-stuttgart.de \\
-University of Stuttgart, Inst.\ for Software Technology, Reliable Software Systems Group \\
+University of Stuttgart, Inst.\ for Software Engineering, Software Quality and Architecture Group \\
 
 \end{document}
 
