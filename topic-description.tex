@@ -1,3 +1,5 @@
+% !TeX document-id = {7431ceeb-a7a0-4e15-9b43-115ae214b7a8}
+% !BIB program = bibtex
 \documentclass[a4paper,12pt]{article}
 
 \usepackage{titlesec}
@@ -42,24 +44,24 @@
 
 
 \subsection*{Background and Motivation}
-In a preceding case study we showed that scenario-based chaos tests are a valid way for testing the resilience of a microservice architecture \cite{CaseStudyDatev}. Besides running such scenarios in production, they could also be simulated to increase time efficiency and safety of such tests. Therefore, a preliminary requirements specification for resilience scenario simulators was created. After a superficial evaluation of five existing microservice simulators it came clear that none of these currently support the requirements to a completely level. 
-However, some simulators provide sophisticated tools for specific types of scenarios. For example, SimuLizar \cite{SimuLizar1} has very advanced work load description tools, whilst MiSim \cite{MiSim} can simulate chaos like fault loads. 
+In a preceding case study we showed that scenario-based chaos tests are a valid way for testing the resilience of a microservice architecture \cite{CaseStudyDatev}. Besides running such scenarios in production, they could also be simulated to increase time efficiency and safety of such tests. 
+Therefore, a preliminary evaluation of five existing microservice simulators was conducted. It came clear that none of these currently fulfill the requirements to an acceptable level. 
+However, some simulators already provide sophisticated tools for specific types of scenarios. For example, SimuLizar \cite{SimuLizar1} has very advanced work load description tools, whilst MiSim \cite{MiSim} can simulate chaos-like fault loads. 
 
 \subsection*{Goals}
-In the scope of this thesis a requirement analysis will take place to establish the exact requirements for a resilience scenario simulator. This will include doing interviews and questionings with the known stakeholders.
-Further, based on these requirements existing microservice simulators will be evaluated with the help of developer interviews, code analysis and a structured research. The goal is to find out which scenario type each simulator can simulate the best.
-The most versatile or promising (with regard to the requirements) simulators will then be extended to support a common and formal scenario description, which is being developed in another project.
-Lastly, the extended simulators will be used to simulate actual scenarios, created and executed in the preceding case study \cite{CaseStudyDatev}. Results of the simulation will then be compared to the real results and show how accurate the simulators are.
+There are three main goals in the scope of this thesis. First a requirement analysis will take place to establish the exact requirements for a resilience scenario simulator.
+Then, based on these requirements existing microservice simulators will be evaluated, to established for which types of scenarios they are the most suitable.
+Lastly, the most versatile or promising (with regard to the requirements) simulators will then be extended to support a common and formal scenario description, which is being developed in another project. 
+This enables the verification of simulation accuracy by utilizing and reusing the data gather in the preceding case study \cite{CaseStudyDatev}.
 
 \subsection*{Possible Collaborations}
-As aforementioned this thesis will reuse the data gathered by a preceding case study. Further, we are currently looking into another possible collaboration, which would supply us with further scenarios and real world data. 
-Lastly, there are three ongoing thesis by other students that also  revolve around the
+Firstly, this thesis will reuse the data of our preceding collaboration with the Datev EG. For another collaboration, we are currently looking into cooperating with the University of Buenos Aires. They can potentially supply us with new requirements, scenarios and testable architectures. Also, there are three ongoing thesis by other students that revolve around the same topic of resilience scenario-based architecture description and testing.
 
 \begin{scriptsize}
 \bibliographystyle{abbrv}
-\bibliography{bibliography.bib}
+\bibliography{bibliography}
 \end{scriptsize}
-
+\enlargethispage*{2cm}
 \subsection*{Contact}
 Dr.-Ing. André van Hoorn, van.hoorn@informatik.uni-stuttgart.de \\
 University of Stuttgart, Inst.\ for Software Engineering, Software Quality and Architecture Group \\
